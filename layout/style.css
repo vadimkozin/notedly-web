@@ -1,0 +1,38 @@
+.container {
+  display: grid;
+  grid-template-areas:
+    'header header'
+    'aside main';
+  grid-template-columns: 220px 1fr;
+  grid-template-rows: 64px calc(100vh - 64px - 1.5em - 1em);
+  /* grid-gap: 1.5em; */
+  max-width: 1080px;
+  margin: 0 auto;
+
+  border: 1px dotted blue;
+  background-color: lightgray;
+}
+
+.block {
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+}
+
+header {
+  grid-area: header;
+  border: 1px dotted grey;
+  display: flex;
+  align-items: center;
+}
+
+aside {
+  grid-area: aside;
+  border: 1px dotted green;
+  overflow-y: auto;
+}
+
+main {
+  grid-area: main;
+  border: 1px dotted magenta;
+  overflow-y: auto;
+}
