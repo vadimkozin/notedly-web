@@ -10,7 +10,7 @@ import { IS_LOGGED_IN } from '../gql/query'
 
 const HeaderBar = styled.header`
   grid-area: header;
-  border: 1px dotted grey;
+  border-bottom: 1px solid grey;
   display: flex;
   align-items: center;
 `

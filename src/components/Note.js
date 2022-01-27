@@ -24,6 +24,7 @@ const MetaInfo = styled.div`
 `
 const UserActions = styled.div`
   margin-left: auto;
+  margin-right: 0.5em;
 `
 const Note = ({ note }) => {
   const {loading, error, data} = useQuery(IS_LOGGED_IN)

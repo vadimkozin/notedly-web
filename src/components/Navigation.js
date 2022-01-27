@@ -5,13 +5,15 @@ import styled from 'styled-components'
 const Nav = styled.nav`
   padding: 1em;
   background-color: #f5f4f0;
-
   grid-area: nav;
-  border: 1px dotted green;
   overflow-y: auto;
 `
 
 const NavList = styled.ul`
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
   margin: 0;
   padding: 0;
   list-style: none;
@@ -32,10 +34,17 @@ const NavList = styled.ul`
   a:focus {
     color: #0077cc;
   }
+
+  @media (min-width: 768px) {
+    display: block;
+  }
 `
 
 const Img = styled.span`
   margin-right: 4px;
+  @media (max-width: 430px) {
+    display: none;
+  }
 `
 const Item = ({ children }) => {
   return (
@@ -55,7 +64,7 @@ const Navigation = () => {
           </Link>
         </li>
         <Link to="/mynotes">
-          <Item>📓</Item>My Notes
+          <Item>📓</Item>My&nbsp;Notes
         </Link>
         <li>
           <Link to="/favorites">

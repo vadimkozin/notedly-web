@@ -43,10 +43,10 @@ const App = () => {
   return (
     <>
       <React.StrictMode>
-      <ApolloProvider client={client}>
-        <GlobalStyle />
-        <Pages />
-      </ApolloProvider>
+        <ApolloProvider client={client}>
+          <GlobalStyle />
+          <Pages />
+        </ApolloProvider>
       </React.StrictMode>
     </>
   )
